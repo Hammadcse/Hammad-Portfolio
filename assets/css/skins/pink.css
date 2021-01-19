@@ -10,6 +10,8 @@
 .aside .nav li a.active{
     color: #ec1839;
 }
+.section-title h2::before,
+.section-title h2::after,
 .nav-toggler span,
 .nav-toggler span::before,
 .nav-toggler span::after,
