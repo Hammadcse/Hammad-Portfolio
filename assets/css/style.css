@@ -258,7 +258,7 @@ input,textarea,select{
 	position: absolute;
 	text-align: center;
 	width: 100%;
-	top: 22%;
+	top: 20%;
 }
 .home .intro h1{
     font-size: 30px;
@@ -1226,5 +1226,6 @@ body.gray .shadow-dark{
     .style-switcher.open {
         -webkit-transform: translate(5%);
         transform: translate(5%);
+        top: 70px;
     }
 }
