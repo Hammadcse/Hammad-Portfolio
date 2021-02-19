@@ -1,0 +1,43 @@
+.aside .logo a::before{
+    border-top: 4px solid #2196f3;
+    border-left: 4px solid #2196f3;
+}
+.aside .logo a::after{
+    border-right: 4px solid #2196f3;
+    border-bottom: 4px solid #2196f3;
+}
+.contact-info-item .icon .fa,
+.blog-tags a,
+.lightbox-controls .prev-item .fa,
+.lightbox-controls .next-item .fa,
+.portfolio-info .icon .fa,
+body.light .portfolio-filter button.active,
+body.gray .portfolio-filter button.active,
+.portfolio-filter button.active,
+.service-item-inner .icon .fa,
+.about-text h3 span,
+body.light .aside .nav li a:hover,
+body.gray .aside .nav li a:hover,
+.aside .nav li a:hover,
+body.light .aside .nav li a.active,
+body.gray .aside .nav li a.active,
+.aside .nav li a.active{
+    color: #2196f3;
+}
+.blog-date,
+.service-item-inner:hover .icon,
+.circle-dot,
+.timeline-item::before,
+.btn,
+.progress-in,
+.section-title h2::before,
+.section-title h2::after,
+.nav-toggler span,
+.nav-toggler span::before,
+.nav-toggler span::after,
+.social-links a{
+    background-color: #2196f3;
+}
+.portfolio-filter button.active{
+    border-color:  #2196f3;
+}

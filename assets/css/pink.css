@@ -1,0 +1,63 @@
+.aside .logo a::before{
+    border-top: 4px solid #ec1839;
+    border-left: 4px solid #ec1839;
+}
+.aside .logo a::after{
+    border-right: 4px solid #ec1839;
+    border-bottom: 4px solid #ec1839;
+}
+.contact-info-item .icon .fa,
+.blog-tags a,
+.lightbox-controls .prev-item .fa,
+.lightbox-controls .next-item .fa,
+.portfolio-info .icon .fa,
+body.light .portfolio-filter button.active,
+body.gray .portfolio-filter button.active,
+.portfolio-filter button.active,
+.service-item-inner .icon .fa,
+.about-text h3 span,
+.aside .nav li a:hover,
+.aside .nav li a.active,
+body.light .aside .nav li a:hover,
+body.gray .aside .nav li a:hover,
+body.light .aside .nav li a.active,
+body.gray .aside .nav li a.active{
+    color: #ec1839;
+}
+.blog-date,
+.service-item-inner:hover .icon,
+.circle-dot,
+.timeline-item::before,
+.btn,
+.progress-in,
+.section-title h2::before,
+.section-title h2::after,
+.nav-toggler span,
+.nav-toggler span::before,
+.nav-toggler span::after,
+.social-links a{
+    background-color: #ec1839;
+}
+.portfolio-filter button.active{
+    border-color: #ec1839;
+}
+.section {
+	min-height: 100vh;
+	background-color: #151515;
+	padding: 0 30px;
+	position: static;
+	margin-left: 270px;
+	opacity: 1;
+	overflow-x: hidden;
+	overflow-y: auto;
+	-webkit-transition: all 0.3s ease;
+	transition: all 0.3s ease;
+}
+.section.active {
+	animation: none;
+}
+@media(max-width:1199px){
+	.section{
+		margin-left: 0;
+	}
+}

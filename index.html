@@ -6,28 +6,44 @@
     <title>Hammad Portfolio</title>
     <!-- Custom-css -->
     <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="stylesheet" href="assets/css/skins/pink.css">
+    <link rel="stylesheet" href="assets/css/styleswitcher.css">
+    <link rel="stylesheet" href="assets/css/skins/blue.css">
+    <!-- Style switcher -->
+    <link rel="stylesheet" class="alternate-style" title="violet" href="assets/css/skins/violet.css" disabled>
+    <link rel="stylesheet" class="alternate-style" title="pink" href="assets/css/pink.css" disabled>
+    <link rel="stylesheet" class="alternate-style" title="orange" href="assets/css/orange.css" disabled>
+    <link rel="stylesheet" class="alternate-style" title="yellow" href="assets/css/yellow.css" disabled>
+    <link rel="stylesheet" class="alternate-style" title="green" href="assets/css/green.css" disabled>
 </head>
 <body>
+    <!-- Preloader -->
+    <div class="preloader">
+        <div class="loader"></div>
+    </div>
+    <!-- Preloader End-->
     <!-- Main-container -->
     <!-- Aside-->
     <div class="aside">
-        <div class="logo">
-            <a href="#">Hammad</a>
-        </div>
+        <!-- Navbar-toggler-btn -->
         <div class="nav-toggler">
             <span></span>
         </div>
-        <ul class="nav">
-            <li><a href="#" class="active"><i class="fa fa-home"></i>Home</a></li>
-            <li><a href="#"><i class="fa fa-user"></i>About</a></li>
-            <li><a href="#"><i class="fa fa-list"></i>Services</a></li>
-            <li><a href="#"><i class="fa fa-briefcase"></i>Portfolio</a></li>
-            <li><a href="#"><i class="fa fa-envelope"></i>Blog</a></li>
-            <li><a href="#"><i class="fa fa-comment"></i>Contact</a></li>
-        </ul>
-        <div class="copyright-text">
-            &copy;2021 Hammad Rahman.All Rights Reserved.
+        <!-- Navbar-toggler-btn End-->
+        <div class="aside-inner">
+            <div class="logo">
+                <a href="#home">Hammad</a>
+            </div>
+            <ul class="nav">
+                <li><a href="#home" class="active"><i class="fa fa-home"></i>Home</a></li>
+                <li><a href="#about"><i class="fa fa-user"></i>About</a></li>
+                <li><a href="#services"><i class="fa fa-list"></i>Services</a></li>
+                <li><a href="#portfolio"><i class="fa fa-briefcase"></i>Portfolio</a></li>
+                <li><a href="#blog"><i class="fa fa-envelope"></i>Blog</a></li>
+                <li><a href="#contact"><i class="fa fa-comment"></i>Contact</a></li>
+            </ul>
+            <div class="copyright-text">
+                &copy;2021 Hammad Rahman.All Rights Reserved.
+            </div>
         </div>
     </div>
     <!-- Aside-End -->
@@ -35,24 +51,25 @@
     <div class="main-content">
 
         <!-- Home-section -->
-        <section class="home section hidden">
-            <div class="container">
-                <div class="intro">
-                    <img class="profile shadow-dark" src="assets/images/Hammad.jpg" alt="profile">
-                    <h1>Hammad Rahman</h1>
-                    <p>I'm a Frontend Developer</p>
-                    <div class="social-links">
-                        <a href="#"><i class="fa fa-twitter"></i></a>
-                        <a href="#"><i class="fa fa-facebook"></i></a>
-                        <a href="#"><i class="fa fa-instagram"></i></a>
-                        <a href="#"><i class="fa fa-linkedin"></i></a>
+        <section class="home section active" id="home">
+                <div class="container particle" id="particles-js">
+                    <div class="intro">
+                        <img class="profile shadow-dark" src="assets/images/Hammad.jpg" alt="profile">
+                        <h1>Hammad Rahman</h1>
+                        <div class="tjs"><p class="type"></p></div>
+                        <div class="social-links">
+                            <a href="https://twitter.com/HammadR45132504"><i class="fa fa-twitter"></i></a>
+                            <a href="https://www.facebook.com/hammadurrahman.hammad.3"><i class="fa fa-facebook"></i></a>
+                            <a href="https://github.com/Hammadcse"><i class="fa fa-github"></i></a>
+                            <a href="https://www.linkedin.com/in/hammad-rahman-7a21281a3/"><i class="fa fa-linkedin"></i></a>
+                        </div>
                     </div>
                 </div>
-            </div>
         </section>
         <!-- Home-section End-->
+
         <!-- About-section -->
-        <section class="about section hidden">
+        <section class="about section" id="about">
             <div class="container">
                 <div class="row">
                     <div class="section-title padd-15">
@@ -99,8 +116,8 @@
                                 </div>
                                 <div class="row">
                                     <div class="buttons padd-15">
-                                        <a href="#" class="btn">Download CV</a>
-                                        <a href="#" class="btn">Hire Me</a>
+                                        <a href="https://drive.google.com/file/d/1OmSjjmq0Mbj3x5H6MTT8RjxyEbDyxSy1/view?usp=sharing" class="btn">Download CV</a>
+                                        <a href="#contact" data-section-index="1" class="btn hire-me">Hire Me</a>
                                     </div>
                                 </div>
                             </div>
@@ -150,7 +167,7 @@
                                                     <i class="fa fa-calendar"></i>2019-(Running now).
                                                 </h6>
                                                 <h4 class="timeline-tittle">B.sc in Computer Science</h4>
-                                                <p class="timeline-text">Anwer Khan Modern University,Uttara,Dhaka-1230.</p>
+                                                <p class="timeline-text">Anwer Khan Modern University,Uttara,Dhaka.</p>
                                             </div>
                                             <!-- Timeline-item End-->
                                             <!-- Timeline-item -->
@@ -222,8 +239,9 @@
             </div>
         </section>
         <!-- About-section End-->
+
         <!-- Service-Section -->
-        <section class="service section">
+        <section class="service section" id="services">
             <div class="container">
                 <div class="row">
                     <div class="section-title padd-15">
@@ -289,13 +307,348 @@
             </div>
         </section>
         <!-- Service-Section End-->
+
+        <!-- Portfolio Section -->
+        <div class="portfolio section" id="portfolio">
+            <div class="container">
+                <div class="row">
+                    <div class="section-title padd-15">
+                        <h2>Portfolio</h2>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="portfolio-filter padd-15">
+                        <button type="button" class="active" data-filter="all">All</button>
+                        <button type="button" data-filter="Web design">Web design</button>
+                        <button type="button" data-filter="Photography">Photography</button>
+                        <button type="button" data-filter="Wordpress">Wordpress</button>
+                    </div>
+                </div>
+                <div class="row">
+                    <!-- portfolio-item -->
+                    <div class="portfolio-item padd-15" data-category="Web design">
+                        <div class="portfolio-item-inner shadow-dark">
+                            <div class="portfolio-img">
+                                <img src="assets/images/portfolio/01.jpg" alt="portfolio">
+                            </div>
+                            <div class="portfolio-info">
+                                <h4>Web design</h4>
+                                <div class="icon">
+                                    <i class="fa fa-search"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- portfolio-item End-->
+                    <!-- portfolio-item -->
+                    <div class="portfolio-item padd-15" data-category="Photography">
+                        <div class="portfolio-item-inner shadow-dark">
+                            <div class="portfolio-img">
+                                <img src="assets/images/portfolio/02.jpg" alt="portfolio">
+                            </div>
+                            <div class="portfolio-info">
+                                <h4>Photography</h4>
+                                <div class="icon">
+                                    <i class="fa fa-search"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- portfolio-item End-->
+                    <!-- portfolio-item -->
+                    <div class="portfolio-item padd-15" data-category="Wordpress">
+                        <div class="portfolio-item-inner shadow-dark">
+                            <div class="portfolio-img">
+                                <img src="assets/images/portfolio/03.jpg" alt="portfolio">
+                            </div>
+                            <div class="portfolio-info">
+                                <h4>Word press</h4>
+                                <div class="icon">
+                                    <i class="fa fa-search"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- portfolio-item End-->
+                    <!-- portfolio-item -->
+                    <div class="portfolio-item padd-15" data-category="Web design">
+                        <div class="portfolio-item-inner shadow-dark">
+                            <div class="portfolio-img">
+                                <img src="assets/images/portfolio/04.jpg" alt="portfolio">
+                            </div>
+                            <div class="portfolio-info">
+                                <h4>Photography</h4>
+                                <div class="icon">
+                                    <i class="fa fa-search"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- portfolio-item End-->
+                    <!-- portfolio-item -->
+                    <div class="portfolio-item padd-15" data-category="Wordpress">
+                        <div class="portfolio-item-inner shadow-dark">
+                            <div class="portfolio-img">
+                                <img src="assets/images/portfolio/05.jpg" alt="portfolio">
+                            </div>
+                            <div class="portfolio-info">
+                                <h4>Word press</h4>
+                                <div class="icon">
+                                    <i class="fa fa-search"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- portfolio-item End-->
+                    <!-- portfolio-item -->
+                    <div class="portfolio-item padd-15" data-category="Web design">
+                        <div class="portfolio-item-inner shadow-dark">
+                            <div class="portfolio-img">
+                                <img src="assets/images/portfolio/06.jpg" alt="portfolio">
+                            </div>
+                            <div class="portfolio-info">
+                                <h4>Web design</h4>
+                                <div class="icon">
+                                    <i class="fa fa-search"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- portfolio-item End-->
+                </div>
+            </div>
+        </div>
+        <!-- Portfolio Section End-->
+
+        <!-- Blog Section -->
+        <section class="blog section" id="blog">
+            <div class="container">
+                <div class="row">
+                    <div class="section-title padd-15">
+                        <h2>Latest Blog</h2>
+                    </div>
+                </div>
+                <div class="row">
+
+                    <!-- Blog-item -->
+                    <div class="blog-item padd-15">
+                        <div class="blog-item-inner shadow-dark">
+                            <div class="blog-img">
+                                <img src="assets/images/blog/b1.jpg" alt="image">
+                                <div class="blog-date">
+                                    4 jun 2020
+                                </div>
+                            </div>
+                            <div class="blog-info">
+                                <h4 class="blog-title">Responsive Web design</h4>
+                                <p class="blog-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi, necessitatibus dignissimos, assumenda distinctio nisi aperiam.</p>
+                                <p class="blog-tags">
+                                    Tags:
+                                    <a href="#">Html</a>,
+                                    <a href="#">Css</a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Blog-item End-->
+
+                    <!-- Blog-item -->
+                    <div class="blog-item padd-15">
+                        <div class="blog-item-inner shadow-dark">
+                            <div class="blog-img">
+                                <img src="assets/images/blog/b2.jpg" alt="image">
+                                <div class="blog-date">
+                                    4 jun 2020
+                                </div>
+                            </div>
+                            <div class="blog-info">
+                                <h4 class="blog-title">Creative Slideshow</h4>
+                                <p class="blog-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi, necessitatibus dignissimos, assumenda distinctio nisi aperiam.</p>
+                                <p class="blog-tags">
+                                    Tags:
+                                    <a href="#">Bootstrap</a>,
+                                    <a href="#">Javascript</a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Blog-item End-->
+
+                    <!-- Blog-item -->
+                    <div class="blog-item padd-15">
+                        <div class="blog-item-inner shadow-dark">
+                            <div class="blog-img">
+                                <img src="assets/images/blog/b3.jpg" alt="image">
+                                <div class="blog-date">
+                                    4 jun 2020
+                                </div>
+                            </div>
+                            <div class="blog-info">
+                                <h4 class="blog-title">Image Gallery Lightbox</h4>
+                                <p class="blog-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi, necessitatibus dignissimos, assumenda distinctio nisi aperiam.</p>
+                                <p class="blog-tags">
+                                    Tags:
+                                    <a href="#">React</a>,
+                                    <a href="#">Veue</a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Blog-item End-->
+
+                </div>
+            </div>
+        </section>
+        <!-- Blog Section End-->
+        <!-- Contact Section -->
+        <section class="contact section" id="contact">
+            <div class="container">
+                <div class="row">
+                    <div class="section-title padd-15">
+                        <h2>Contact Me</h2>
+                    </div>
+                </div>
+                <div class="row">
+                     <!-- Contact-info-item -->
+                    <div class="contact-info-item padd-15">
+                        <div class="icon"><i class="fa fa-phone"></i></div>
+                        <h4>Call me on</h4>
+                        <p>017-9093-3699</p>
+                    </div>
+                    <!-- Contact-info-item End-->
+                    <!-- Contact-info-item -->
+                    <div class="contact-info-item padd-15">
+                        <div class="icon"><i class="fa fa-map-marker"></i></div>
+                        <h4>Office</h4>
+                        <p>Shayamoli,Ring road,Dhaka</p>
+                    </div>
+                    <!-- Contact-info-item End-->
+                    <!-- Contact-info-item -->
+                    <div class="contact-info-item padd-15">
+                        <div class="icon"><i class="fa fa-envelope"></i></div>
+                        <h4>Email</h4>
+                        <p>hammadcse99@gmail.com</p>
+                    </div>
+                    <!-- Contact-info-item End-->
+                </div>
+                <!-- Contact-form -->
+                <div class="row">
+                    <form class="contact-form padd-15" action="https://formspree.io/f/xknpapgk" method="post">
+                        <div class="row">
+                            <div class="form-item col-6 padd-15">
+                                <div class="form-group">
+                                    <input name="Name" id="Name" type="text" class="form-control" placeholder="Name*">
+                                </div>
+                            </div>
+                            <div class="form-item col-6 padd-15">
+                                <div class="form-group">
+                                    <input name="Email" id="Email" type="mail" class="form-control" placeholder="E-mail*">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="form-item col-12 padd-15">
+                                <div class="form-group">
+                                    <input name="Subject" id="Subject" type="text" class="form-control" placeholder="Subject*">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="form-item col-12 padd-15">
+                                <div class="form-group">
+                                    <textarea name="Message" id="Message" placeholder="Your Message..." class="form-control"></textarea>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12 padd-15">
+                                <button type="submit" class="btn">Send Message</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <!-- Contact-form End-->
+        </section>
+        <!-- Contact Section End-->
     </div>
     <!-- Main-content End -->
     <!-- Main-container End -->
 
+    <!-- Portfolio-Lightbox -->
+    <div class="lightbox">
+        <div class="lightbox-content">
+            <div class="lightbox-close">&times;</div>
+            <img src="assets/images/portfolio/05.jpg" onclick="nextItem()" alt="lightbox-img" class="lightbox-img">
+            <div class="lightbox-caption">
+                <div class="caption-text"></div>
+                <div class="caption-counter"></div>
+            </div>
+        </div>
+        <div class="lightbox-controls">
+            <div class="prev-item" onclick="prevItem()"><i class="fa fa-angle-left"></i></div>
+            <div class="next-item" onclick="nextItem()"><i class="fa fa-angle-right"></i></div>
+        </div>
+    </div>
+     <!-- Portfolio-Lightbox End-->
+
+     <!-- Style-switcher -->
+     <div class="style-switcher">
+         <div class="toggle-style-switcher">
+             <i class="fa fa-cog fa-spin"></i>
+         </div>
+         <h5>Style Switcher</h5>
+         <ul>
+             <li><a href="javascript:void(0);" title="violet" style="background-color: #b22287;" onclick="setActiveStyle('violet')"></a></li>
+             <li><a href="javascript:void(0);" title="pink" style="background-color: #ec1839;" onclick="setActiveStyle('pink')"></a></li>
+             <li><a href="javascript:void(0);" title="orange" style="background-color: #fa5b0f;" onclick="setActiveStyle('orange')"></a></li>
+             <li><a href="javascript:void(0);" title="yellow" style="background-color: #ffb400;" onclick="setActiveStyle('yellow')"></a></li>
+             <li><a href="javascript:void(0);" title="green" style="background-color: #72b626;" onclick="setActiveStyle('green')"></a></li>
+         </ul>
+         <h5>Body skin</h5>
+         <label for="dark">
+            <input type="radio" class="body-skin" name="body-style" id="dark" value="dark" checked="true">
+            Dark
+        </label>
+         <label for="light">
+             <input type="radio" class="body-skin" name="body-style" id="light" value="light">
+             Light
+         </label>
+         <label for="gray">
+            <input type="radio" class="body-skin" name="body-style" id="gray" value="gray">
+            Gray
+        </label>
+     </div>
+     <!-- Style-switcher End-->
 
 
+
+
+        <!-- Style switcher -->
+        <script src="assets/js/styleswitcher.js"></script>
+        <!-- Custom-js -->
+        <script src="assets/js/main.js"></script>
+        <!-- Particle js -->
+        <script src="assets/js/particles.js"></script>
+        <script src="assets/js/app.js"></script>
         <!-- Font Awesome -->
         <script src="https://kit.fontawesome.com/235903a4c0.js" crossorigin="anonymous"></script>
+        <!-- Type js for title -->
+        <script src="assets/js/typed.js"></script>
+        <script>
+            var typed = new Typed(".type", {
+            strings: [
+                "Frontend Developer",
+                "Creative",
+                "Designer"
+            ],
+            typeSpeed:100,
+            backSpeed:10,
+            loop:true,
+            showCursor: false,
+          });
+            </script>
+        <!-- jquery -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
 </body>
 </html>
