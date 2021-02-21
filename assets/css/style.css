@@ -750,7 +750,7 @@ input,textarea,select{
     transform: translate(0px);
     opacity: 1;
 }
-.portfolio-info .icon .fa{
+.portfolio-info .icon .far{
     line-height: 40px;
 }
 .lightbox{
@@ -1185,6 +1185,13 @@ body.gray .shadow-dark{
         -ms-flex: 0 0 100%;
         flex: 0 0 100%;
         max-width: 100%;
+    }
+}
+@media(max-width:768px){
+    .portfolio-info,
+    .portfolio-info h4,
+    .portfolio-info .icon{
+        opacity: 1;
     }
 }
 @media(max-width:767px){
