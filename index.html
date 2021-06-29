@@ -1,20 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hammad Portfolio</title>
     <!-- Custom-css -->
     <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="stylesheet" href="assets/css/styleswitcher.css">
     <link rel="stylesheet" href="assets/css/skins/blue.css">
+    <link rel="stylesheet" href="assets/css/styleswitcher.css">
     <!-- Style switcher -->
-    <link rel="stylesheet" class="alternate-style" title="violet" href="assets/css/skins/violet.css" disabled>
+    <link rel="stylesheet" class="alternate-style" title="violet" href="assets/css/violet.css" disabled>
     <link rel="stylesheet" class="alternate-style" title="pink" href="assets/css/pink.css" disabled>
     <link rel="stylesheet" class="alternate-style" title="orange" href="assets/css/orange.css" disabled>
     <link rel="stylesheet" class="alternate-style" title="yellow" href="assets/css/yellow.css" disabled>
     <link rel="stylesheet" class="alternate-style" title="green" href="assets/css/green.css" disabled>
 </head>
+
 <body>
     <!-- Preloader -->
     <div class="preloader">
@@ -52,19 +54,21 @@
 
         <!-- Home-section -->
         <section class="home section active" id="home">
-                <div class="container particle" id="particles-js">
-                    <div class="intro">
-                        <img class="profile shadow-dark" src="assets/images/Hammad.jpg" alt="profile">
-                        <h1>Hammad Rahman</h1>
-                        <div class="tjs"><p class="type"></p></div>
-                        <div class="social-links">
-                            <a href="https://twitter.com/HammadR45132504" target="_blank"><i class="fa fa-twitter"></i></a>
-                            <a href="https://www.facebook.com/hammadurrahman.hammad.3" target="_blank"><i class="fa fa-facebook"></i></a>
-                            <a href="https://github.com/Hammadcse"><i class="fa fa-github" target="_blank"></i></a>
-                            <a href="https://www.linkedin.com/in/hammad-rahman-7a21281a3/" target="_blank"><i class="fa fa-linkedin"></i></a>
-                        </div>
+            <div class="container particle" id="particles-js">
+                <div class="intro">
+                    <img class="profile shadow-dark" src="assets/images/Hammad.jpg" alt="profile">
+                    <h1>Hammad Rahman</h1>
+                    <div class="tjs">
+                        <p class="type"></p>
+                    </div>
+                    <div class="social-links">
+                        <a href="https://twitter.com/HammadR45132504" target="_blank"><i class="fa fa-twitter"></i></a>
+                        <a href="https://www.facebook.com/hammadurrahman.hammad.3" target="_blank"><i class="fa fa-facebook"></i></a>
+                        <a href="https://github.com/Hammadcse"><i class="fa fa-github" target="_blank"></i></a>
+                        <a href="https://www.linkedin.com/in/hammad-rahman-7a21281a3/" target="_blank"><i class="fa fa-linkedin"></i></a>
                     </div>
                 </div>
+            </div>
         </section>
         <!-- Home-section End-->
 
@@ -81,8 +85,8 @@
                         <div class="row">
                             <div class="about-text padd-15">
                                 <h3>I'm Hammad Rahman and <span>Frontend Developer</span></h3>
-                                <p>Hello,My name is Hammad Rahman.I'm a Web designer and I'm verry passionate and dedicated to my work.With 1 year of great experience as a Professional Web designer I have acquired the skills and knowledge to make your project a success.
-                                    I enjoy every step of the design process,from discussion and collaboration.
+                                <p>Hello,My name is Hammad Rahman.I'm a Web designer and I'm verry passionate and dedicated to my work.With 1 year of great experience as a Professional Web designer I have acquired the skills and knowledge to make your project
+                                    a success. I enjoy every step of the design process,from discussion and collaboration.
                                 </p>
                             </div>
                         </div>
@@ -525,7 +529,7 @@
                     </div>
                 </div>
                 <div class="row">
-                     <!-- Contact-info-item -->
+                    <!-- Contact-info-item -->
                     <div class="contact-info-item padd-15">
                         <div class="icon"><i class="fa fa-phone"></i></div>
                         <h4>Call me on</h4>
@@ -586,63 +590,73 @@
                 <!-- Contact-form End-->
         </section>
         <!-- Contact Section End-->
-    </div>
-    <!-- Main-content End -->
-    <!-- Main-container End -->
+        </div>
+        <!-- Main-content End -->
+        <!-- Main-container End -->
 
-    <!-- Portfolio-Lightbox -->
-    <div class="lightbox">
-        <div class="lightbox-content">
-            <div class="lightbox-close">&times;</div>
-            <img src="assets/images/portfolio/05.jpg" onclick="nextItem()" alt="lightbox-img" class="lightbox-img">
-            <div class="lightbox-caption">
-                <div class="caption-text"></div>
-                <div class="caption-counter"></div>
+        <!-- Portfolio-Lightbox -->
+        <div class="lightbox">
+            <div class="lightbox-content">
+                <div class="lightbox-close">&times;</div>
+                <img src="assets/images/portfolio/05.jpg" onclick="nextItem()" alt="lightbox-img" class="lightbox-img">
+                <div class="lightbox-caption">
+                    <div class="caption-text"></div>
+                    <div class="caption-counter"></div>
+                </div>
+            </div>
+            <div class="lightbox-controls">
+                <div class="prev-item" onclick="prevItem()"><i class="fa fa-angle-left"></i></div>
+                <div class="next-item" onclick="nextItem()"><i class="fa fa-angle-right"></i></div>
             </div>
         </div>
-        <div class="lightbox-controls">
-            <div class="prev-item" onclick="prevItem()"><i class="fa fa-angle-left"></i></div>
-            <div class="next-item" onclick="nextItem()"><i class="fa fa-angle-right"></i></div>
-        </div>
-    </div>
-     <!-- Portfolio-Lightbox End-->
+        <!-- Portfolio-Lightbox End-->
 
-     <!-- Style-switcher -->
-     <div class="style-switcher">
-         <div class="toggle-style-switcher">
-             <i class="fa fa-cog fa-spin"></i>
-         </div>
-         <h5>Style Switcher</h5>
-         <ul>
-             <li><a href="javascript:void(0);" title="violet" style="background-color: #b22287;" onclick="setActiveStyle('violet')"></a></li>
-             <li><a href="javascript:void(0);" title="pink" style="background-color: #ec1839;" onclick="setActiveStyle('pink')"></a></li>
-             <li><a href="javascript:void(0);" title="orange" style="background-color: #fa5b0f;" onclick="setActiveStyle('orange')"></a></li>
-             <li><a href="javascript:void(0);" title="yellow" style="background-color: #ffb400;" onclick="setActiveStyle('yellow')"></a></li>
-             <li><a href="javascript:void(0);" title="green" style="background-color: #72b626;" onclick="setActiveStyle('green')"></a></li>
-         </ul>
-         <h5>Body skin</h5>
-         <label for="dark">
+        <!-- Style-switcher -->
+        <div class="style-switcher">
+            <div class="toggle-style-switcher">
+                <i class="fa fa-cog fa-spin"></i>
+            </div>
+            <h5>Style Switcher</h5>
+            <ul>
+                <li>
+                    <a href="javascript:void(0);" title="violet" style="background-color: #b22287;" onclick="setActiveStyle('violet')"></a>
+                </li>
+                <li>
+                    <a href="javascript:void(0);" title="pink" style="background-color: #ec1839;" onclick="setActiveStyle('pink')"></a>
+                </li>
+                <li>
+                    <a href="javascript:void(0);" title="orange" style="background-color: #fa5b0f;" onclick="setActiveStyle('orange')"></a>
+                </li>
+                <li>
+                    <a href="javascript:void(0);" title="yellow" style="background-color: #ffb400;" onclick="setActiveStyle('yellow')"></a>
+                </li>
+                <li>
+                    <a href="javascript:void(0);" title="green" style="background-color: #72b626;" onclick="setActiveStyle('green')"></a>
+                </li>
+            </ul>
+            <h5>Body skin</h5>
+            <label for="dark">
             <input type="radio" class="body-skin" name="body-style" id="dark" value="dark" checked="true">
             Dark
         </label>
-         <label for="light">
+            <label for="light">
              <input type="radio" class="body-skin" name="body-style" id="light" value="light">
              Light
          </label>
-         <label for="gray">
+            <label for="gray">
             <input type="radio" class="body-skin" name="body-style" id="gray" value="gray">
             Gray
         </label>
-     </div>
-     <!-- Style-switcher End-->
+        </div>
+        <!-- Style-switcher End-->
 
 
 
 
-        <!-- Style switcher -->
-        <script src="assets/js/styleswitcher.js"></script>
         <!-- Custom-js -->
         <script src="assets/js/main.js"></script>
+        <!-- Style switcher -->
+        <script src="assets/js/styleswitcher.js"></script>
         <!-- Particle js -->
         <script src="assets/js/particles.js"></script>
         <script src="assets/js/app.js"></script>
@@ -652,19 +666,20 @@
         <script src="assets/js/typed.js"></script>
         <script>
             var typed = new Typed(".type", {
-            strings: [
-                "Frontend Developer",
-                "Creative",
-                "Designer"
-            ],
-            typeSpeed:100,
-            backSpeed:10,
-            loop:true,
-            showCursor: false,
-          });
-            </script>
+                strings: [
+                    "Frontend Developer",
+                    "Creative",
+                    "Designer"
+                ],
+                typeSpeed: 100,
+                backSpeed: 10,
+                loop: true,
+                showCursor: false,
+            });
+        </script>
         <!-- jquery -->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
 </body>
+
 </html>
