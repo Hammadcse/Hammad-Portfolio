@@ -6,6 +6,13 @@
     border-right: 4px solid #72b626;
     border-bottom: 4px solid #72b626;
 }
+.home .intro p,
+.portfolio_info .icon .far{
+    color: #72b626;
+}
+.portfolio_title h4{
+	text-shadow: 1px 1px #72b626;
+}
 .contact-info-item .icon .fa,
 .blog-tags a,
 .lightbox-controls .prev-item .fa,
