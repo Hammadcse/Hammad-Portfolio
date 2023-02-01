@@ -362,7 +362,7 @@ select {
 }
 
 .intro span {
-    color: rgb(0 0 0 / 75%);
+    color: #b3b3b3;
     font-size: 15px;
     text-transform: uppercase;
     letter-spacing: 4px;
